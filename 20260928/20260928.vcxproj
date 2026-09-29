@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CardManager.h" />
+    <ClInclude Include="CardUser.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="CPU.h" />
     <ClInclude Include="Game.h" />
@@ -148,11 +149,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CardManager.cpp" />
+    <ClCompile Include="CardUser.cpp" />
     <ClCompile Include="CPU.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Turn.cpp" />
+    <ClCompile Include="Turn.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

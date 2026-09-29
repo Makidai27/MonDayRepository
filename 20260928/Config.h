@@ -14,13 +14,13 @@ const int CPU_DRAW_LIMIT = 15;
 //カード設定
 //==========================================
 
-//カード最小値
+//カードの最小値
 const int CARD_MIN = 1;
-//カード最大値
+//カードの最大値
 const int CARD_MAX = 11;
 //同じ数字のカードの枚数
 const int CARD_DUPLICATE_COUNT = 4;
-//カード総枚数
+//カードの総枚数
 const int CARD_TOTAL = 44;
 
 //==========================================

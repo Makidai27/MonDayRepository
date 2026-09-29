@@ -9,5 +9,5 @@ public:
 	//Player'sTurn
 	bool PlayPlayerTurn(Player* player,CardManager* CardManager);
 	//Cpu'sTurn
-	void PlayerCpuTurn(Player* Cpu, CardManager* CardManager);
+	void PlayCpuTurn(Player* player,CPU* cpu, CardManager* CardManager);
 };

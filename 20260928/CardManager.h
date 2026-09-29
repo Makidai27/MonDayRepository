@@ -9,7 +9,7 @@ public:
 	//コンストラクタ
 	CardManager();
 	//カードのシャッフル
-	void Shufflu();
+	void ShuffleCards();
 	//カードを作成
 	void CreateCards();
 	//カードを1枚引く

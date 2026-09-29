@@ -10,6 +10,7 @@ CardManager::CardManager()
 void CardManager::CreateCards()
 {
 	int index = 0;
+	//カード作成
 	for (int number = 0; number < CARD_MAX; number++)
 	{
 		for (int i = 0; i < CARD_DUPLICATE_COUNT; i++)
@@ -18,6 +19,14 @@ void CardManager::CreateCards()
 			index++;
 		}
 	}
+
+	cardCount = CARD_TOTAL;
+
+}
+
+void CardManager::ShuffleCards()
+{
+
 	//シャッフル
 	for (int j = 0; j < CARD_TOTAL; j++)
 	{
@@ -26,8 +35,6 @@ void CardManager::CreateCards()
 		cards[j] = cards[randomIndex];
 		cards[randomIndex] = temp;
 	}
-	cardCount = CARD_TOTAL;
-
 }
 
 int CardManager::DrawCard()
@@ -41,4 +48,9 @@ int CardManager::DrawCard()
 
 	cardCount--;
 	return card;
+}
+
+int CardManager::GetCardCount()
+{
+	return cardCount;
 }
